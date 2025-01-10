@@ -6,7 +6,10 @@ Theme Change :
 
 
 Categories Tab:
+![image](https://github.com/user-attachments/assets/3afc0822-73f0-4595-a0c3-6e0be9d9e665)
 ![image](https://github.com/user-attachments/assets/25abe640-d5af-4613-9bce-7649c7b78bcc)
+
+
 
 Cart:
 ![Uploading image.png…]()
