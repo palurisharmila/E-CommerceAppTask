@@ -1,6 +1,10 @@
 screenshots:
 ![image](https://github.com/user-attachments/assets/11e24a76-660e-468f-a4bb-57ef0d092ec1)
 
+Theme Change :
+![image](https://github.com/user-attachments/assets/e92a1b1d-dc27-4696-bda9-ebe181fb15d1)
+
+
 Categories Tab:
 ![image](https://github.com/user-attachments/assets/25abe640-d5af-4613-9bce-7649c7b78bcc)
 
