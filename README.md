@@ -12,7 +12,8 @@ Categories Tab:
 
 
 Cart:
-![Uploading image.png…]()
+![Screenshot 2025-01-10 114541](https://github.com/user-attachments/assets/db020362-2a7b-4803-9687-31d8b1697355)
+
 
 
 # Getting Started with Create React App
