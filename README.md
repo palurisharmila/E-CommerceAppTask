@@ -1,3 +1,11 @@
+screenshots:
+![image](https://github.com/user-attachments/assets/11e24a76-660e-468f-a4bb-57ef0d092ec1)
+
+Categories Tab:
+![image](https://github.com/user-attachments/assets/25abe640-d5af-4613-9bce-7649c7b78bcc)
+
+Cart:
+![Uploading image.png…]()
 
 
 # Getting Started with Create React App
