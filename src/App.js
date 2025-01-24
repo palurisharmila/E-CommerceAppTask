@@ -90,49 +90,105 @@
 // )};
 
 
-import React from "react";
+// import React from "react";
 
-import {
-  Routes,
-  Route,
-  BrowserRouter as Router
-} from "react-router-dom";
-import {Provider, useSelector} from 'react-redux';
-import store from './E-Commerce/Store/Store'
-import Navbar from './E-Commerce/Pages/Navbar';
-import Home from './E-Commerce/Pages/Home';
-import Category from './E-Commerce/Pages/Category';
+// import {
+//   Routes,
+//   Route,
+//   BrowserRouter as Router
+// } from "react-router-dom";
+// import {Provider, useSelector} from 'react-redux';
+// import store from './E-Commerce/Store/Store'
+// import Navbar from './E-Commerce/Pages/Navbar';
+// import Home from './E-Commerce/Pages/Home';
+// import Category from './E-Commerce/Pages/Category';
+// import Cart from "./E-Commerce/Pages/Cart";
+// import { lightTheme,darkTheme } from "./E-Commerce/Themes";
+// import { ThemeProvider } from "@emotion/react";
+// import { CssBaseline } from "@mui/material";
+// import ProductDetails from "./E-Commerce/Pages/ProductDetails";
+// import { useMemo, useState } from "react";
+// function App() {
+//   const [theme,setTheme]=useState("light");
+//   const toggleTheme = ()=>{
+//       setTheme((prevTheme)=>(prevTheme==="light"?"dark":"light"));
+//   }
+//   const currentTheme = useMemo(()=>{
+//     return theme==="light"?lightTheme:darkTheme;
+// },[theme]);
+//   return (
+//     <Provider store={store}> 
+//     <ThemeProvider theme={currentTheme}>
+//       <CssBaseline />
+//   <Router>
+//     <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
+//     <Routes>
+//       <Route path='/' element={<Home/>}/>
+//       <Route path= "/category/:category" element={<Category/>}/>
+//       <Route path = "/Cart" element={<Cart/>}/>
+//       <Route path="/product/:id" element={<ProductDetails/>}/>
+//     </Routes>
+//   </Router>
+ 
+//   </ThemeProvider>
+//   </Provider>
+
+// )};
+// export default App;
+
+
+// import React from "react";
+// import Reducer from "./ReducerComponents/Reducer";
+
+// function App(){
+//   return(
+//     <Reducer/>
+//   )
+// }
+// export default App;
+
+
+
+import React, { useMemo, useState } from "react";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./E-Commerce/Store/Store";
+import Navbar from "./E-Commerce/Pages/Navbar";
+import Home from "./E-Commerce/Pages/Home";
+import Category from "./E-Commerce/Pages/Category";
 import Cart from "./E-Commerce/Pages/Cart";
-import { lightTheme,darkTheme } from "./E-Commerce/Themes";
+import { lightTheme, darkTheme } from "./E-Commerce/Themes";
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import ProductDetails from "./E-Commerce/Pages/ProductDetails";
-import { useMemo, useState } from "react";
+
 function App() {
-  const [theme,setTheme]=useState("light");
-  const toggleTheme = ()=>{
-      setTheme((prevTheme)=>(prevTheme==="light"?"dark":"light"));
-  }
-  const currentTheme = useMemo(()=>{
-    return theme==="light"?lightTheme:darkTheme;
-},[theme]);
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
+  const currentTheme = useMemo(() => {
+    return theme === "light" ? lightTheme : darkTheme;
+  }, [theme]);
+
   return (
-    <Provider store={store}> 
-    <ThemeProvider theme={currentTheme}>
-      <CssBaseline />
-  <Router>
-    <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path= "/category/:category" element={<Category/>}/>
-      <Route path = "/Cart" element={<Cart/>}/>
-      <Route path="/product/:id" element={<ProductDetails/>}/>
-    </Routes>
-  </Router>
- 
-  </ThemeProvider>
-  </Provider>
+    <Provider store={store}>
+      <ThemeProvider theme={currentTheme}>
+        <CssBaseline />
+        <Router>
+          <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/category/:category" element={<Category />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
+          </Routes>
+        </Router>
+      </ThemeProvider>
+    </Provider>
+  );
+}
 
-)};
 export default App;
-

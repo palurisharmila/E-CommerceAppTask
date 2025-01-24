@@ -11,7 +11,7 @@ const ShoppingApp=()=> {
         {id:2,name:'Phone',price:1000},
         {id:3,name:'Headphones',price:2000}
 
-    ]
+    ] 
 
     const handleAddItem=(item)=>{
         dispatch(addItem(item));

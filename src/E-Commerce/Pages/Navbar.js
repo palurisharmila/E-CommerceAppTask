@@ -57,32 +57,7 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
 
         }
     };
-    // const handleSearch = (query) => {
-    //     const lowerCaseQuery = query.toLowerCase();
-    //     const filtered = product.filter(
-    //         (item) =>
-    //             item.title.toLowerCase().includes(lowerCaseQuery) ||
-    //             item.category.toLowerCase().includes(lowerCaseQuery)
-    //     );
-    //     if (filtered.length === 0) {
-    //         setErrorMessage("No products found")
-    //     }
-    //     else {
-    //         setErrorMessage('');
-    //     }
-    //     setFilteredProducts(filtered);
-    // };
-
-    // const handleFilterChange = (filter) => {
-    //     let sortedProducts = [...filteredProducts];
-    //     if (filter === 'price') {
-    //         sortedProducts.sort((a, b) => a.price - b.price);
-    //     }
-    //     else if (filter === 'rating') {
-    //         sortedProducts.sort((a, b) => b.rating - a.rating);
-    //     }
-    //     setFilteredProducts(sortedProducts);
-    // }
+   
     return (
         <AppBar position="static">
             <Toolbar>

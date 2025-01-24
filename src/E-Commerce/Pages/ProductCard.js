@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Card,CardContent,CardMedia,Typography} from '@mui/material'
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 const ProductCard =({product,onAddToCart})=>{
 

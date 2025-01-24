@@ -40,7 +40,7 @@ const Home = () => {
     };
     
     const handleFilterChange = (filter) =>{
-        let sortedProducts = [...filteredProducts];
+        let sortedProducts = [...filteredProducts];  
         if(filter==='price'){
             sortedProducts.sort((a,b)=>a.price-b.price);
         }
