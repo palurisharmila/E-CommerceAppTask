@@ -1,3 +1,21 @@
+screenshots:
+![image](https://github.com/user-attachments/assets/11e24a76-660e-468f-a4bb-57ef0d092ec1)
+
+Theme Change :
+![image](https://github.com/user-attachments/assets/e92a1b1d-dc27-4696-bda9-ebe181fb15d1)
+
+
+Categories Tab:
+![image](https://github.com/user-attachments/assets/3afc0822-73f0-4595-a0c3-6e0be9d9e665)
+![image](https://github.com/user-attachments/assets/25abe640-d5af-4613-9bce-7649c7b78bcc)
+
+
+
+Cart:
+![Screenshot 2025-01-10 114541](https://github.com/user-attachments/assets/db020362-2a7b-4803-9687-31d8b1697355)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
